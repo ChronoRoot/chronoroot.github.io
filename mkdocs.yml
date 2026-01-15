@@ -1,4 +1,5 @@
 site_name: ChronoRoot 2.0 Docs
+site_url: https://chronoroot.github.io/
 theme:
   name: material
   features:
