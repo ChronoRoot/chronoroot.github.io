@@ -1,0 +1,48 @@
+site_name: ChronoRoot 2.0 Docs
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - announce.dismiss
+  palette:
+    primary: green
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/ChronoRoot/ChronoRoot2
+repo_name: ChronoRoot/ChronoRoot2
+
+nav:
+  - Home: index.md
+  - Tutorials:
+    - Standard Interface - A. thaliana: tutorials/standard.md
+    - Standard Interface – Tomato: tutorials/standard_tomato.md
+    - Screening Interface - Germination: tutorials/screening_germination.md
+    - Screening Interface - Etiolation: tutorials/screening_hypocotyl.md
+    - Segmentation: tutorials/segmentation.md
+    - Training on your own data: tutorials/training_on_your_images.md
+    - Docker Guide: tutorials/docker.md
+  - External Resources:
+    - "Software Repository": https://github.com/ChronoRoot/ChronoRoot2
+    - "Hardware Module": https://github.com/ChronoRoot/ChronoRootModuleHardware
+    - "Hardware Control": https://github.com/ChronoRoot/ChronoRootControl
+    - "Training Dataset": https://huggingface.co/datasets/ngaggion/ChronoRoot2
+    - "Demo Data (Drive)": https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ChronoRoot/ChronoRoot2
+    - icon: fontawesome/solid/database
+      link: https://huggingface.co/datasets/ngaggion/ChronoRoot2
