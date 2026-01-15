@@ -1,4 +1,4 @@
-# ChronoRoot 2.0 Docker Guide
+# Docker Guide
 
 This guide provides a step-by-step walkthrough for setting up and running **ChronoRoot 2.0** using Docker. Using Docker ensures that all dependencies (AI models, CUDA, and specialized phenotyping libraries) are pre-configured in an isolated environment.
 
@@ -179,8 +179,8 @@ Inside the application, navigate to the **`/DATA/`** folder to find the files yo
 
 * **Permission Denied (Linux):** Did you run `sudo usermod -aG docker $USER`? If not, you must use `sudo` before every docker command.
 * **GUI Not Showing:**
-* **Linux:** Ensure you ran `xhost +local:docker` before starting the container.
-* **Windows:** Ensure you are running the command inside a WSL2 terminal and that your Windows version supports WSLg (Windows 10 Build 19044+ or Windows 11).
+    * **Linux:** Ensure you ran `xhost +local:docker` before starting the container.
+    * **Windows:** Ensure you are running the command inside a WSL2 terminal and that your Windows version supports WSLg (Windows 10 Build 19044+ or Windows 11).
 
 
 * **Crashes:** If segmentation crashes on large images, increase the shared memory by changing `--shm-size=8gb` to `--shm-size=16gb`.

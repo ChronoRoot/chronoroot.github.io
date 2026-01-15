@@ -1,7 +1,3 @@
-This version integrates more technical depth regarding **nnU-Net v2** internals, detailed data organization rules, and specific links for further learning.
-
----
-
 # Annotation & Training Tutorial
 
 ## 1. Data Pipeline: From Raw Video to Annotation Ready

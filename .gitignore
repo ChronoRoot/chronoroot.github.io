@@ -1,0 +1,29 @@
+# --- MkDocs Build Output ---
+# This is where 'mkdocs build' generates the static site.
+# You don't want to track this as it is generated from the /docs folder.
+site/
+
+# --- Environment & Dependencies ---
+# Virtual environments used to install mkdocs and plugins
+venv/
+.venv/
+env/
+bin/
+lib/
+share/
+pyvenv.cfg
+
+# --- Python Artifacts ---
+# Generated if you use custom hooks or python-based plugins
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Editors/IDEs ---
+.vscode/
+.idea/
+*.swp
