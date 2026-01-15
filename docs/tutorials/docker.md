@@ -1,9 +1,5 @@
 # Docker Guide
 
-This guide provides a step-by-step walkthrough for setting up and running **ChronoRoot 2.0** using Docker. Using Docker ensures that all dependencies (AI models, CUDA, and specialized phenotyping libraries) are pre-configured in an isolated environment.
-
----
-
 ## 1. Install Docker
 
 Before you can run ChronoRoot, you need the Docker Engine installed on your computer.
