@@ -41,7 +41,7 @@ sudo usermod -aG docker $USER
 
 ## 2. Install NVIDIA Support (Linux & Windows)
 
-**Crucial for AI Acceleration:** To use the AI segmentation features rapidly, Docker needs access to your NVIDIA GPU.
+**Required for GPU Segmentation support:** To use the segmentation method rapidly, Docker needs access to your NVIDIA GPU.
 
 * **Windows:** Simply ensure your [NVIDIA Drivers](https://www.nvidia.com/Download/index.aspx) are up to date. Docker Desktop handles the rest automatically.
 * **Linux:** You must install the **NVIDIA Container Toolkit**. Please follow the official setup guide below, as instructions vary by distribution:
@@ -163,8 +163,8 @@ docker run -it \
 Once the terminal prompt changes (e.g., `(ChronoRoot) root@container:/app#`), use the following commands:
 
 * **`chronoroot`** : Launch Main Interface.
-* **`screening`** : Launch Batch Screening.
-* **`segmentation`** : Launch AI Segmentation.
+* **`screening`** : Launch Screening Interface.
+* **`segmentation`** : Launch Segmentation Interface.
 
 **Where is my data?**
 Inside the application, navigate to the **`/DATA/`** folder to find the files you mounted from your computer.

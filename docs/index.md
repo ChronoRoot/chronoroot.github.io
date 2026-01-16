@@ -57,6 +57,7 @@ Choose the method that best fits your setup. Native and Apptainer installations 
 
 === "Native / Conda (Recommended)"
     *Best for: Linux or Windows WSL where you want desktop integration.*
+    Requires [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution) installed in your system.
 
     **Ubuntu / Linux:**
     ```bash
@@ -118,7 +119,7 @@ If you use ChronoRoot 2.0 in your research, please cite our work:
 ```bibtex
 @article{gaggion2025chronoroot,
   title={ChronoRoot 2.0: An Open AI-Powered Platform for 2D Temporal Plant Phenotyping},
-  author={Gaggion, Nicolás and others},
+  author={Gaggion, Nicolás et al.},
   journal={arXiv preprint arXiv:2504.14736},
   year={2025}
 }

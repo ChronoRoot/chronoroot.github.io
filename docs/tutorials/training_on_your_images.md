@@ -46,17 +46,19 @@ Understanding the hierarchy is essential for the training scripts to correctly a
 
 ## 3. Our Sampling Strategy by Experiment
 
-We do not annotate every frame. We combine biological milestones with model qualitative performance:
+Manual annotation is an exhausting task, and every video contains maybe hundreds or thousands of frames. To maximize the information gained from each annotated image while minimizing labor, we do not annotate every frame. Instead, we manually select a small number of the most informative frames per video.
+
+The core principle is simple, as we follow an active learning approach: the worse the model performs on a frame, the more valuable that frame is for annotation. By selecting distinct developmental stages and challenging scenarios, you help the model learn more effectively.
+
+The guidelines below are based on our prior experience. Feel free to adapt these numbers to your specific experimental needs:
 
 | Experiment | Biological Focus | Typical Sampling |
 | --- | --- | --- |
-| **Root Analysis** | Architecture & branching | 5–8 images (from early to late stages) |
-| **Germination** | Radicle emergence | 2–3 images (seed, some germinated, fully germinated) |
-| **Etiolation** | Hypocotyl elongation | 3–4 images |
-| **ManyRoots** | Primary root tracking | 4–6 images (over first week) |
-| **Tomato** | Architecture | 5–8 images |
-
-Always prioritize frames where the model fails. The worse the model performs, the more valuable that frame is for the next training iteration.
+| **Root Analysis** | Architecture & branching | **5–8 images** (from early to late stages) |
+| **Germination** | Radicle emergence | **2–3 images** (seed, some germinated, fully germinated) |
+| **Etiolation** | Hypocotyl elongation | **3–4 images** |
+| **ManyRoots** | Primary root tracking | **4–6 images** (over first week) |
+| **Tomato** | Architecture | **5–8 images** |
 
 ---
 
@@ -87,18 +89,15 @@ Accuracy is vital. A "Stem" labeled as "Primary Root" will confuse the model’s
 ### Annotation Controls & Tips
 
 * **Brush Shape:** Always use the **Round Brush** for natural plant structures.
-* **Navigation:** Select the **Magnifying Glass**.
-* *Zoom:* Hold **Right-Click** and drag.
-* *Pan:* **Left-Click** and drag.
-
+  * **Navigation:** Select the **Magnifying Glass**.
+  * *Zoom:* Hold **Right-Click** and drag.
+  * *Pan:* **Left-Click** and drag.
 
 * **The "Paint Over" Rule:** To fix a misclassification (e.g., changing a model-predicted Primary Root to a Lateral Root):
-1. Select the correct Active Label (e.g., Green/Lateral).
-2. Set the tool to **"Paint Over Label"** mode.
-3. Select the incorrect label (e.g., Red/Primary) in the "Over" dropdown.
-4. This ensures you only edit the specific pixels needing correction without bleeding into the background.
-
-
+  1. Select the correct Active Label (e.g., Green/Lateral).
+  2. Set the tool to **"Paint Over Label"** mode.   
+  3. Select the incorrect label (e.g., Red/Primary) in the "Over" dropdown.
+  4. This ensures you only edit the specific pixels needing correction without bleeding into the background.
 
 ---
 
@@ -138,7 +137,7 @@ You must manually prepare this file in the `nnUNet_raw/DatasetXXX/` folder.
 * **Arabidopsis:** Copy `dataset_arabidopsis.json` from the repository.
 * **Action:** Rename the copy to `dataset.json` and update the `numTraining` field to match your actual number of training cases.
 
-### Step 3: Data Splitting (Anti-Leakage)
+### Step 3: Data Splitting 
 
 To prevent "overfitting" where the model recognizes specific plate geometry:
 
