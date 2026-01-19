@@ -9,7 +9,7 @@
 </p>
 
 
-**ChronoRoot 2.0** is a comprehensive, open-source solution that merges affordable hardware with state-of-the-art Deep Learning to automate the tracking and analysis of plant development. It includes three specialized graphical interfaces. On Linux and Windows (WSL2), these are installed with custom desktop launchers for a point-and-click experience.
+**ChronoRoot 2.0** is a comprehensive, open-source solution that merges affordable hardware with state-of-the-art Deep Learning to automate the tracking and analysis of plant development. It includes three specialized graphical interfaces. On Linux and Windows 10 (via WSL2), these are installed with custom desktop launchers for a point-and-click experience.
 
 | Icon | Application | Purpose & Capabilities | Tutorials |
 | --- | --- | --- | --- |
@@ -24,7 +24,7 @@
 
 ### Latest News & Major Updates
 
-- **07 Jan 2026:** Added desktop shortcut support for Windows users (via WSL2).
+- **07 Jan 2026:** Added desktop shortcut support for Windows 10 users (via WSL2).
 - **15 Dec 2025:** Updated desktop launchers with custom ChronoRoot icons.
 - **11 Dec 2025:** Introduced **Apptainer** as the primary installer to support HPC clusters. Docker is now reserved for Mac or advanced users.
 - **08 Nov 2025:** Unified the repository into a **single Conda environment** for simplified maintenance and setup.
@@ -55,8 +55,11 @@ All updates refer to the [ChronoRoot Dataset on HuggingFace](https://huggingface
 
 Choose the method that best fits your setup. Native and Apptainer installations provide three desktop shortcuts for ease of use.
 
+!!! info "Windows 11 Users"
+    Note, for Windows 11 users shortcuts are not **yet** available. Please run ChronoRoot applications via WSL terminal, we will be adding shortcut support in a near future update.
+
 === "Native / Conda (Recommended)"
-    *Best for: Linux or Windows WSL where you want desktop integration.*
+    *Best for: Linux or Windows 10 WSL where you want desktop integration.*
     Requires [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution) installed in your system.
 
     **Ubuntu / Linux:**
@@ -65,7 +68,7 @@ Choose the method that best fits your setup. Native and Apptainer installations 
     bash installer_conda_linux.sh
     ```
 
-    **Windows (via WSL2):**
+    **Windows 10 (via WSL2):**
     ```bash
     wget https://raw.githubusercontent.com/chronoroot/ChronoRoot2/master/installer_conda_wsl.sh
     bash installer_conda_wsl.sh
@@ -80,7 +83,7 @@ Choose the method that best fits your setup. Native and Apptainer installations 
     bash installer_linux.sh
     ```
 
-    **Windows (via WSL2):**
+    **Windows 10 (via WSL2):**
     ```bash
     wget https://raw.githubusercontent.com/chronoroot/ChronoRoot2/master/apptainerInstaller/installer_windows.sh
     bash installer_windows.sh
