@@ -4,10 +4,10 @@
 
 <p align="center">
   <a href="http://arxiv.org/abs/2504.14736"><img src="https://img.shields.io/badge/arXiv-2504.14736-red.svg" alt="DOI"></a>
-  <a href="https://github.com/ChronoRoot/ChronoRoot2/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ChronoRoot/ChronoRoot2" alt="License"></a>
+  <a href="https://github.com/ngaggion/ChronoRoot2/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ngaggion/ChronoRoot2" alt="License"></a>
   <a href="https://hub.docker.com/r/ngaggion/chronoroot"><img src="https://img.shields.io/docker/pulls/ngaggion/chronoroot.svg" alt="Docker"></a>
+  <a href="https://huggingface.co/ngaggion/models"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow" alt="Hugging Face Models"></a>
 </p>
-
 
 **ChronoRoot 2.0** is a comprehensive, open-source solution that merges affordable hardware with state-of-the-art Deep Learning to automate the tracking and analysis of plant development. It includes three specialized graphical interfaces. On Linux and Windows 10 (via WSL2), these are installed with custom desktop launchers for a point-and-click experience.
 
@@ -24,12 +24,15 @@
 
 ### Latest News & Major Updates
 
+- **28 Jan 2026**: Hugging Face Integration: Model weights are now hosted on the Hugging Face Hub!
+  - The repository is now lightweight and clone-friendly.
+  - Installers have been updated to fetch the latest models automatically.
+  - Added a download weights script for easy manual updates.
 - **07 Jan 2026:** Added desktop shortcut support for Windows 10 users (via WSL2).
 - **15 Dec 2025:** Updated desktop launchers with custom ChronoRoot icons.
 - **11 Dec 2025:** Introduced **Apptainer** as the primary installer to support HPC clusters. Docker is now reserved for Mac or advanced users.
 - **08 Nov 2025:** Unified the repository into a **single Conda environment** for simplified maintenance and setup.
 - **30 Oct 2025:** **nnUNetv2 Port:**
-    - Models are now included directly in the repo.
     - Added a new CLI and removed the dependency on the custom nnUNet fork; models now load directly via PyTorch.
     - New model weights are available for *Arabidopsis thaliana* and Tomato multi-class segmentation.
 - **20 Apr 2025:** 🚀 **ChronoRoot 2.0 Released!** Featuring a revamped segmentation engine, enhanced analysis modules, and improved UX.
@@ -54,6 +57,9 @@ All updates refer to the [ChronoRoot Dataset on HuggingFace](https://huggingface
 ## Installation
 
 Choose the method that best fits your setup. Native and Apptainer installations provide three desktop shortcuts for ease of use.
+
+!!! note "Automatic Model Download" 
+    The installers below will automatically check for and download the latest segmentation model weights from Hugging Face during setup. 
 
 !!! info "Windows 11 Users"
     Note, for Windows 11 users shortcuts are not **yet** available. Please run ChronoRoot applications via WSL terminal, we will be adding shortcut support in a near future update.
@@ -137,5 +143,6 @@ If you use ChronoRoot 2.0 in your research, please cite our work:
 * :fontawesome-brands-python: **Module Control:** [https://github.com/ChronoRoot/ChronoRootControl](https://github.com/ChronoRoot/ChronoRootControl)
 * :fontawesome-solid-database: **Training Dataset:** [https://huggingface.co/datasets/ngaggion/ChronoRoot2](https://huggingface.co/datasets/ngaggion/ChronoRoot2)
 * :material-google-drive: **Demo Data:** [https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing](https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing)
+* :hugging: **Model Weights:** [https://huggingface.co/ngaggion/models](https://huggingface.co/ngaggion/models)
 
 ---
