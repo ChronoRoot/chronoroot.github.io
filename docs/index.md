@@ -25,9 +25,9 @@
 ### Latest News & Major Updates
 
 - **28 Jan 2026**: Hugging Face Integration: Model weights are now hosted on the Hugging Face Hub!
-  - The repository is now lightweight and clone-friendly.
-  - Installers have been updated to fetch the latest models automatically.
-  - Added a download weights script for easy manual updates.
+    - The repository is now lightweight and clone-friendly.
+    - Installers have been updated to fetch the latest models automatically.
+    - Added a download weights script for easy manual updates.
 - **07 Jan 2026:** Added desktop shortcut support for Windows 10 users (via WSL2).
 - **15 Dec 2025:** Updated desktop launchers with custom ChronoRoot icons.
 - **11 Dec 2025:** Introduced **Apptainer** as the primary installer to support HPC clusters. Docker is now reserved for Mac or advanced users.
