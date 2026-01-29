@@ -51,6 +51,30 @@ Complete the plant identification details for the first plant you wish to analyz
 
 4 **Repeat Process:** Complete this workflow for all 4 plants in the demo. Feel free to compare varieties using patterns like A-B-A-B or A-B-C-D to observe behavioral differences.
 
+Plant 2 shows a normal case:
+
+![Main Root Start Selection Plant 2](standard_images/13.png)
+![Main Root Start Selection Plant 2 Example 2](standard_images/14.png)
+
+Plant 3 shows a problematic case! Pay attention:
+
+![Main Root Start Selection Plant 3 Example 1](standard_images/15.png){ width="24%" }
+![Main Root Start Selection Plant 3 Example 2](standard_images/16.png){ width="24%" }
+![Main Root Start Selection Plant 3 Example 3](standard_images/17.png){ width="24%" }
+![Main Root Start Selection Plant 3 Example 4](standard_images/18.png){ width="24%" }
+
+Here we can see the systems misidentified part of the shoot as root. Make sure to select the correct point to discard all above it! If we select the root starting point when we are looking only at the seed point and do not follow the complete video, we might end up selecting a wrong point.
+
+Bad Selection: 
+![Main Root Start Selection Plant 3 Example 5](standard_images/19.png){ width="24%" }
+![Main Root Start Selection Plant 3 Example 6](standard_images/20.png){ width="24%" }
+
+So make sure you use the video scrollbar to navigate through the frames and select the correct point where the main root starts growing downwards.
+
+Good Selection:
+![Main Root Start Selection Plant 3 Example 7](standard_images/21.png){ width="24%" }
+![Main Root Start Selection Plant 3 Example 8](standard_images/22.png){ width="24%" }
+
 ---
 
 ### Quality Control and Batch Processing:
