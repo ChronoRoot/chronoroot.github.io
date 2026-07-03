@@ -24,6 +24,16 @@
 
 ### Latest News & Major Updates
 
+- **2 July 2026**: First release of the [ChronoRoot Fleet Controller](https://github.com/ChronoRoot/ChronoRootFleet). By utilizing the redesigned Control API, it allows for the management of modules, including a detailed dashboard status for each module, and the ability to launch batch jobs to multiple modules simultaneously. It acts as a passive aggregator where nodes run autonomously, while also functioning as a reverse proxy that facilitates access to multiple modules from a single site.
+- **2 July 2026**: Version 2.0 of the [ChronoRoot Hardware Controller](https://github.com/ChronoRoot/ChronoRootControl) released!
+    - Updated from Raspbian Bullseye to Raspbian Trixie.
+    - Updated from Picamera to Picamera2.
+    - Redesigned and documented the full API for Fleet communications.
+    - Added Raspberry Pi Zero 2W support to manage a single camera, Raspberry Pi 3B/3B+ support with up to 4 cameras via the IVMech Multiplexer, and support for all Raspi Cam V2, V3, and V3 Wide. 
+    - Many other quality-of-life improvements:
+    - - Uses [Comitup](https://github.com/davesteele/comitup) for easy Wi-Fi connection, acting as a hotspot prior to configuring the Wi-Fi network.
+    - - No longer requires you to connect via SSH; everything now goes through the interface, from rebooting the module and changing the data storage location or mounting point, to synchronizing your data anywhere you like via RClone!
+    - - Re-designed user experience with dashboards and more intelligent system health diagnostics, including a background worker that can detect issues and automatically reboot when a camera freezes.
 - **28 Jan 2026**: Hugging Face Integration: Model weights are now hosted on the Hugging Face Hub!
     - The repository is now lightweight and clone-friendly.
     - Installers have been updated to fetch the latest models automatically.
@@ -141,6 +151,7 @@ If you use ChronoRoot 2.0 in your research, please cite our work:
 * :fontawesome-brands-github: **Software Repository:** [https://github.com/ChronoRoot/ChronoRoot2](https://github.com/ChronoRoot/ChronoRoot2)
 * :fontawesome-brands-github-alt: **Hardware Module:** [https://github.com/ChronoRoot/ChronoRootModuleHardware](https://github.com/ChronoRoot/ChronoRootModuleHardware)
 * :fontawesome-brands-python: **Module Control:** [https://github.com/ChronoRoot/ChronoRootControl](https://github.com/ChronoRoot/ChronoRootControl)
+* :fontawesome-brands-python: **Module Control:** [https://github.com/ChronoRoot/ChronoRootFleet](https://github.com/ChronoRoot/ChronoRootFleet)
 * :fontawesome-solid-database: **Training Dataset:** [https://huggingface.co/datasets/ngaggion/ChronoRoot2](https://huggingface.co/datasets/ngaggion/ChronoRoot2)
 * :material-google-drive: **Demo Data:** [https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing](https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing)
 * :hugging: **Model Weights:** [https://huggingface.co/ngaggion/models](https://huggingface.co/ngaggion/models)
