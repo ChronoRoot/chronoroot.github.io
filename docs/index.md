@@ -34,6 +34,7 @@
     - - Uses [Comitup](https://github.com/davesteele/comitup) for easy Wi-Fi connection, acting as a hotspot prior to configuring the Wi-Fi network.
     - - No longer requires you to connect via SSH; everything now goes through the interface, from rebooting the module and changing the data storage location or mounting point, to synchronizing your data anywhere you like via RClone!
     - - Re-designed user experience with dashboards and more intelligent system health diagnostics, including a background worker that can detect issues and automatically reboot when a camera freezes.
+- **28 Feb 2026**: ChronoRoot 2.0 article was published at [GigaScience](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giag018/8502140)! 
 - **28 Jan 2026**: Hugging Face Integration: Model weights are now hosted on the Hugging Face Hub!
     - The repository is now lightweight and clone-friendly.
     - Installers have been updated to fetch the latest models automatically.
@@ -136,11 +137,18 @@ New to ChronoRoot? Download our [Demo Data Videos](https://drive.google.com/driv
 If you use ChronoRoot 2.0 in your research, please cite our work:
 
 ```bibtex
-@article{gaggion2025chronoroot,
-  title={ChronoRoot 2.0: An Open AI-Powered Platform for 2D Temporal Plant Phenotyping},
-  author={Gaggion, Nicolás et al.},
-  journal={arXiv preprint arXiv:2504.14736},
-  year={2025}
+@article{10.1093/gigascience/giag018,
+    author = {Gaggion, Nicolás and Boccardo, Noelia A and Bonazzola, Rodrigo and Legascue, María Florencia and Mammarella, María Florencia and Rodriguez, Florencia Sol and Aballay, Federico Emanuel and Catulo, Florencia Belén and Barrios, Andana and Santoro, Luciano J and Accavallo, Franco and Villarreal, Santiago Nahuel and Pereyra-Bistrain, Leonardo I and Benhamed, Moussa and Crespi, Martin and Ricardi, Martiniano María and Petrillo, Ezequiel and Blein, Thomas and Ariel, Federico and Ferrante, Enzo},
+    title = {ChronoRoot 2.0: an open AI-powered platform for 2D temporal plant phenotyping},
+    journal = {GigaScience},
+    volume = {15},
+    pages = {giag018},
+    year = {2026},
+    month = {01},
+    issn = {2047-217X},
+    doi = {10.1093/gigascience/giag018},
+    url = {https://doi.org/10.1093/gigascience/giag018},
+    eprint = {https://academic.oup.com/gigascience/article-pdf/doi/10.1093/gigascience/giag018/67174649/giag018.pdf},
 }
 ```
 
