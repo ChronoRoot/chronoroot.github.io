@@ -26,7 +26,7 @@
 
 - **20 Nov 2026**: New segmentation weights, trained with [SCNP](https://arxiv.org/abs/2603.18671) (Same Class Neighbor Penalization; Valverde, Papadopoulos, Larsen, and Dahl, CVPR 2026). SCNP is used during training. It improves the topology of the masks, and the overall results of these two models are better.
     - [Arabidopsis](https://huggingface.co/ngaggion/ChronoRoot2-Arabidopsis) replaces the previous Arabidopsis weights.
-    - [MultiPlant](https://huggingface.co/ngaggion/ChronoRoot2-MultiPlant) is trained on Arabidopsis, tomato, and some Medicago images. The Medicago images will be made public shortly.
+    - [MultiPlant](https://huggingface.co/ngaggion/ChronoRoot2-MultiPlant) is trained on Arabidopsis, tomato, and Medicago. The Medicago images are in the [ChronoRoot dataset](https://huggingface.co/datasets/ngaggion/ChronoRoot2).
     - Running `download_weights.sh` again fetches both models.
 - **20 Nov 2026**: [UnsupervisedRootVideos](https://huggingface.co/datasets/ngaggion/UnsupervisedRootVideos) is available for unsupervised deep learning research with videos. These are the same videos as the annotated ChronoRoot set, sampled every hour, with no annotations.
 - **2 July 2026**: First release of the [ChronoRoot Fleet Controller](https://github.com/ChronoRoot/ChronoRootFleet). By utilizing the redesigned Control API, it allows for the management of modules, including a detailed dashboard status for each module, and the ability to launch batch jobs to multiple modules simultaneously. It acts as a passive aggregator where nodes run autonomously, while also functioning as a reverse proxy that facilitates access to multiple modules from a single site.
@@ -59,6 +59,7 @@
 
 All updates refer to the [ChronoRoot Dataset on HuggingFace](https://huggingface.co/datasets/ngaggion/ChronoRoot2).
 
+- **20 Nov 2026:** Added 144 *Arabidopsis thaliana* images (hypocotyl in light), bringing that species to 1,055. Added 110 *Medicago* images. Tomato stays at 480 images.
 - **07 Nov 2025:** Added 48 *Arabidopsis thaliana* images (hypocotyl etiolation), bringing the species total to 913.
 - **30 Oct 2025:** Major expansion and restructuring:
     - Added 480 *Solanum lycopersicum* (tomato) images with multi-class masks.
