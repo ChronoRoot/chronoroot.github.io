@@ -24,6 +24,11 @@
 
 ### Latest News & Major Updates
 
+- **20 Nov 2026**: New segmentation weights, trained with [SCNP](https://arxiv.org/abs/2603.18671) (Same Class Neighbor Penalization; Valverde, Papadopoulos, Larsen, and Dahl, CVPR 2026). SCNP is used during training. It improves the topology of the masks, and the overall results of these two models are better.
+    - [Arabidopsis](https://huggingface.co/ngaggion/ChronoRoot2-Arabidopsis) replaces the previous Arabidopsis weights.
+    - [MultiPlant](https://huggingface.co/ngaggion/ChronoRoot2-MultiPlant) is trained on Arabidopsis, tomato, and some Medicago images. The Medicago images will be made public shortly.
+    - Running `download_weights.sh` again fetches both models.
+- **20 Nov 2026**: [UnsupervisedRootVideos](https://huggingface.co/datasets/ngaggion/UnsupervisedRootVideos) is available for unsupervised deep learning research with videos. These are the same videos as the annotated ChronoRoot set, sampled every hour, with no annotations.
 - **2 July 2026**: First release of the [ChronoRoot Fleet Controller](https://github.com/ChronoRoot/ChronoRootFleet). By utilizing the redesigned Control API, it allows for the management of modules, including a detailed dashboard status for each module, and the ability to launch batch jobs to multiple modules simultaneously. It acts as a passive aggregator where nodes run autonomously, while also functioning as a reverse proxy that facilitates access to multiple modules from a single site.
 - **2 July 2026**: Version 2.0 of the [ChronoRoot Hardware Controller](https://github.com/ChronoRoot/ChronoRootControl) released!
     - Updated from Raspbian Bullseye to Raspbian Trixie.
@@ -161,7 +166,8 @@ If you use ChronoRoot 2.0 in your research, please cite our work:
 * :fontawesome-brands-python: **Module Control:** [https://github.com/ChronoRoot/ChronoRootControl](https://github.com/ChronoRoot/ChronoRootControl)
 * :fontawesome-brands-python: **Module Control:** [https://github.com/ChronoRoot/ChronoRootFleet](https://github.com/ChronoRoot/ChronoRootFleet)
 * :fontawesome-solid-database: **Training Dataset:** [https://huggingface.co/datasets/ngaggion/ChronoRoot2](https://huggingface.co/datasets/ngaggion/ChronoRoot2)
+* :fontawesome-solid-database: **Unsupervised videos:** [https://huggingface.co/datasets/ngaggion/UnsupervisedRootVideos](https://huggingface.co/datasets/ngaggion/UnsupervisedRootVideos). The same videos as the annotated set, one frame every hour, with no annotations.
 * :material-google-drive: **Demo Data:** [https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing](https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing)
-* :hugging: **Model Weights:** [https://huggingface.co/ngaggion/models](https://huggingface.co/ngaggion/models)
+* :hugging: **Model Weights:** [Arabidopsis](https://huggingface.co/ngaggion/ChronoRoot2-Arabidopsis) and [MultiPlant](https://huggingface.co/ngaggion/ChronoRoot2-MultiPlant)
 
 ---

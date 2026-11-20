@@ -29,6 +29,9 @@ nav:
     - "Hardware Module": https://github.com/ChronoRoot/ChronoRootModuleHardware
     - "Hardware Control": https://github.com/ChronoRoot/ChronoRootControl
     - "Training Dataset": https://huggingface.co/datasets/ngaggion/ChronoRoot2
+    - "Unsupervised Videos": https://huggingface.co/datasets/ngaggion/UnsupervisedRootVideos
+    - "Arabidopsis Weights": https://huggingface.co/ngaggion/ChronoRoot2-Arabidopsis
+    - "MultiPlant Weights": https://huggingface.co/ngaggion/ChronoRoot2-MultiPlant
     - "Demo Data (Drive)": https://drive.google.com/drive/folders/1PJCn_MMHcM9KPgz8dYe1F2Cvdt43FS3Z?usp=sharing
 
 markdown_extensions:
